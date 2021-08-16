@@ -1,0 +1,30 @@
+* {
+  margin: 3px 0 3px 0;
+}
+
+.border {
+  border: solid 1px black;
+}
+
+.title {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-ul {
+  display: block;
+  width: 290px;
+  padding: 0 0 0 24rem;
+  margin: 5px;
+  margin-top: 1rem;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  padding: 0 0 0 20.5rem;
+}
