@@ -20,13 +20,6 @@
   margin-top: 1rem;
 }
 
-.book-ul {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .book-form {
   display: flex;
   flex-direction: column;
