@@ -1,16 +1,16 @@
 /* eslint-disable max-classes-per-file */
 class Book {
-  constructor(title, author, nPages) {
+  constructor(title, author, isbn) {
     this.title = title;
     this.author = author;
-    this.nPages = nPages;
+    this.isbn = isbn;
   }
 }
 
 class Store {
   static getBooks() {
     let books;
-    if (localStorage.getItem('books') === null) {
+    if(localStorage.getItem('books') === null) {
       books = [];
     } else {
       books = JSON.parse(localStorage.getItem('books'));
@@ -25,11 +25,11 @@ class Store {
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removeBook(nPages) {
+  static removeBook(isbn) {
     const books = Store.getBooks();
 
     books.forEach((book, index) => {
-      if (book.nPages === nPages) {
+      if(book.isbn === isbn) {
         books.splice(index, 1);
       }
     });
@@ -37,3 +37,4 @@ class Store {
     localStorage.setItem('books', JSON.stringify(books));
   }
 }
+
