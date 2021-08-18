@@ -19,7 +19,8 @@ body {
   margin: 0 auto;
 }
 
-.center > h1, h2 {
+.center > h1,
+h2 {
   text-align: center;
 }
 
@@ -68,6 +69,7 @@ tr:nth-child(odd) {
   justify-content: center;
   margin-bottom: 5px;
 }
+
 .form-control {
   width: 60%;
 }
