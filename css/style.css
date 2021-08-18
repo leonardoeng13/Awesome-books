@@ -1,30 +1,104 @@
 * {
-  margin: 3px 0 3px 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(194, 203, 211);
 }
 
 .border {
   border: solid 1px black;
 }
 
+.rounded {
+  border-radius: 20px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.center > h1,
+h2 {
+  text-align: center;
+}
+
+.book-list {
+  margin-top: 2rem;
+}
+
+.container {
+  margin-top: 10vh;
+  width: 50vw;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 2px 2px 3px 2px rgba(48, 43, 43, 0.2);
+}
+
+table {
+  width: 40vw;
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+}
+
+tr {
+  font-weight: 600;
+}
+
+tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
 .title {
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
+  width: 30vw;
+  text-align: center;
+  margin: 15px auto;
 }
 
-.book-ul {
-  display: block;
-  width: 290px;
-  padding: 0 0 0 24rem;
-  margin: 5px;
-  margin-top: 1rem;
+.form-in {
+  width: 30vw;
+  padding: 1em;
 }
 
-.book-form {
+.form-group {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 290px;
-  padding: 0 0 0 20.5rem;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.center-add {
+  display: flex;
+  justify-content: center;
+}
+
+.bnt-position {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20%;
+}
+
+.btn {
+  box-shadow: 2px 2px black;
+}
+
+.btn-r {
+  border-radius: 3px;
+}
+
+#book-list {
+  border: 1px solid #000;
+  border-bottom: #000 1px solid;
+  margin: 25px;
+  padding: 12px;
+  font-size: 19.9px;
+  color: rgb(20, 20, 20);
+  justify-content: space-between;
 }
