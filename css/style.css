@@ -19,6 +19,14 @@ body {
   margin: 0 auto;
 }
 
+.center > h1, h2 {
+  text-align: center;
+}
+
+.book-list {
+  margin-top: 2rem;
+}
+
 .container {
   margin-top: 10vh;
   width: 50vw;
@@ -34,11 +42,14 @@ table {
 
 td {
   padding: 1rem;
-  text-align: center;
 }
 
-tr:nth-child(even) {
-  background-color: #ddd;
+tr {
+  font-weight: 600;
+}
+
+tr:nth-child(odd) {
+  background-color: #dcdcdc;
 }
 
 .title {
@@ -52,17 +63,40 @@ tr:nth-child(even) {
   padding: 1em;
 }
 
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
 .form-control {
-  width: 96%;
-  padding: 0.5em;
-  margin: 10px 0;
+  width: 60%;
+}
+
+.center-add {
+  display: flex;
+  justify-content: center;
+}
+
+.bnt-position {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20%;
 }
 
 .btn {
-  width: 100%;
-  padding: 0.5em;
+  box-shadow: 2px 2px black;
 }
 
 .btn-r {
   border-radius: 3px;
+}
+
+#book-list {
+  border: 1px solid #000;
+  border-bottom: #000 1px solid;
+  margin: 25px;
+  padding: 12px;
+  font-size: 19.9px;
+  color: rgb(20, 20, 20);
+  justify-content: space-between;
 }

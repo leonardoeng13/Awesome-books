@@ -51,10 +51,8 @@ class UI {
     const row = document.createElement('tr');
 
     row.innerHTML = `
-      <td>${book.title}</td>
-      <td>${book.author}</td>
-      <td>${book.isbn}</td>
-      <td><a href="#" class="btn btn-danger btn-sm delete">Delete</a></td>
+      <td>"${book.title}" by ${book.author} ISBN# ${book.isbn}</td>
+      <td><a href="#" class="btn btn-danger btn-sm delete text-center remove-book ms-auto bg-white border border-2 border-dark text-dark px-1 d-flex align-items-end">Remove</a></td>
     `;
 
     list.appendChild(row);
