@@ -1,104 +1,77 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(194, 203, 211);
+  height: 100vh;
 }
 
-.border {
-  border: solid 1px black;
-}
-
-.rounded {
-  border-radius: 20px;
-}
-
-.center {
-  margin: 0 auto;
-}
-
-.center > h1,
-h2 {
-  text-align: center;
-}
-
-.book-list {
+.book-list,
+form,
+.contact-info {
   margin-top: 2rem;
 }
 
-.container {
-  margin-top: 10vh;
-  width: 50vw;
-  padding: 1rem;
-  background-color: white;
-  box-shadow: 2px 2px 3px 2px rgba(48, 43, 43, 0.2);
+h1,
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-table {
-  width: 40vw;
-  padding: 1rem;
+/* Nav Section */
+.links {
+  border-right: 1px solid darkblue;
 }
 
-td {
-  padding: 1rem;
+.date {
+  font-size: 14px;
 }
 
-tr {
+/* List Section */
+.book-card {
   font-weight: 600;
 }
 
-tr:nth-child(odd) {
+.book-card:nth-child(odd) {
   background-color: #dcdcdc;
 }
 
-.title {
-  width: 30vw;
-  text-align: center;
-  margin: 15px auto;
+.line {
+  width: 30%;
+  border-bottom: 2px solid black;
 }
 
-.form-in {
-  width: 30vw;
-  padding: 1em;
+.input::placeholder {
+  color: black;
 }
 
-.form-group {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
-}
-
-.form-control {
+.text-container {
   width: 60%;
 }
 
-.center-add {
-  display: flex;
-  justify-content: center;
+/* Add Section */
+
+.add-book {
+  align-self: flex-end;
 }
 
-.bnt-position {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20%;
-}
-
-.btn {
+.remove-book,
+.add-book {
   box-shadow: 2px 2px black;
 }
 
-.btn-r {
-  border-radius: 3px;
-}
+@media only screen and (min-width: 992px) {
+  main {
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+  }
 
-#book-list {
-  border: 1px solid #000;
-  border-bottom: #000 1px solid;
-  margin: 25px;
-  padding: 12px;
-  font-size: 19.9px;
-  color: rgb(20, 20, 20);
-  justify-content: space-between;
+  h1,
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
