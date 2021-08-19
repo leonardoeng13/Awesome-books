@@ -1,7 +1,7 @@
-import Book from './modules/book';
-import ListSection from './modules/list_section';
-import Nav from './modules/nav';
-import { DateTime } from './modules/luxon';
+import Book from './modules/book.js';
+import ListSection from './modules/list_section.js';
+import Nav from './modules/nav.js';
+import { DateTime } from './modules/luxon.js';
 
 const book = new Book();
 const listSection = new ListSection();
