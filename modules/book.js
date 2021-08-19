@@ -22,7 +22,6 @@ export default class Book {
 
     for (let i = 0; i < this.BOOKS_DATA.length; i += 1) {
       if (this.BOOKS_DATA[i].title === bookTitle.value
-        || this.BOOKS_DATA[i].author === bookAuthor.value
         || this.BOOKS_DATA[i].isbn === bookIsbn.value) {
         exists = true;
       }
