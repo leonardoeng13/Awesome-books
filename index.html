@@ -11,6 +11,35 @@
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg  bg-white border-secondary border mt-2 ">
+			<div class="container-fluid">
+				<a class="navbar-brand home" href="#">Awesome Books</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+					aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item ">
+							<a class="nav-link list-button border-end" href="#">
+								Book List
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link add-new border-end" href="#">
+								New Book
+							</a>
+						</li>
+						<li class="nav-item add-contacts">
+							<a class="nav-link" href="#">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    <div class="date "></div>
     <div class="container center">
       <h1 class="form-title center mb-2 fw-bold">All Awesome books</h1>
         <table class="table">
@@ -36,6 +65,7 @@
         </form>
         
     </div>
+    <script src="./js/date.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

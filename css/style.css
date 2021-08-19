@@ -28,6 +28,11 @@ h2 {
   margin-top: 2rem;
 }
 
+.date {
+  margin-right: 20px;
+  text-align: right;
+}
+
 .container {
   margin-top: 10vh;
   width: 50vw;
